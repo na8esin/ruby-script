@@ -1,3 +1,4 @@
+# keyword_initという引数もある
 Customer = Struct.new(:name, :address)
 
 #<struct Customer name="Dave", address="123 Main">
