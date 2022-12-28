@@ -5,4 +5,4 @@ injected = products.inject({images:[]}) do |result, product|
   result
 end
 
-p injected
+p injected # {:images=>["hoge", "fuga"]}
