@@ -13,3 +13,4 @@ p injected[33] # <struct User id=33>
 # {2=>[#<struct User id=2>], 33=>[#<struct User id=33>], 45=>[#<struct User id=45>], 68=>[#<struct User id=68>]}
 grouped = users.group_by(&:id)
 p grouped[33].first # と思ったけど、firstがうっとうしい。
+p grouped[:unknown] # nil
