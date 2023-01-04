@@ -14,3 +14,7 @@ p injected[33] # <struct User id=33>
 grouped = users.group_by(&:id)
 p grouped[33].first # と思ったけど、firstがうっとうしい。
 p grouped[:unknown] # nil
+
+# 大先生から頂いた書き方。シンプルだが、アロケートが気になるそう
+p mapped = users.map{[_1.id, _1]}.to_h
+p mapped[:unknown] # nil
