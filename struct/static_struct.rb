@@ -17,3 +17,11 @@ class User
 end
 
 p User.new {|u| u.id = 12}.id # 12
+
+# railsも含めるとattributeの選択肢もある
+# active_modelはrailsの外で使うのは難しそう
+#
+# 下記の二つをincludeすることで、initializeが不要になる
+# include ActiveModel::Model
+# include ActiveModel::Attributes
+#
