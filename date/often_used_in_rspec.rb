@@ -9,4 +9,8 @@ p Time.current.prev_month.beginning_of_month.next_day
 # まあ、現在Timeをtravel_toしなきゃいけない場合もあるが、
 # 引数に入れる場合は、断然こっち
 # 年跨ぎとかも意識できるし
+Time.zone = 'Asia/Tokyo'
 p Time.zone.local(2023, 1, 2)
+
+# beginning_of_dayとか冗長だよね
+p Time.current.next_day.beginning_of_day
