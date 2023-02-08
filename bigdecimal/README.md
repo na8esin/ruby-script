@@ -1,0 +1,2 @@
+https://docs.ruby-lang.org/ja/latest/library/bigdecimal.html
+>BigDecimal オブジェクトが算術演算子の左にあるときは、 BigDecimal オブジェクトが右にあるオブジェクトを (必要なら) BigDecimal に変換してから計算します。従って、BigDecimal オブジェクト以外でも数値を意味するものなら右に置けば演算は可能です。
