@@ -25,3 +25,12 @@ p User.new {|u| u.id = 12}.id # 12
 # include ActiveModel::Model
 # include ActiveModel::Attributes
 #
+# class Customer
+#  include ActiveModel::Model
+#   include ActiveModel::Attributes
+
+#   attribute :name
+#   attribute :address
+# end
+
+# Customer.new(name: 'Dave', address: '123 Main').name # Dave
