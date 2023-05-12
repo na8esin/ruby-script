@@ -1,14 +1,13 @@
-# fizzbuzz
 def fizzbuzz
-  (1..100).each do |i|
-    if i % 15 == 0
+  (1..100).each do |number|
+    if number % 3 == 0 && number % 5 == 0
       puts "FizzBuzz"
-    elsif i % 3 == 0
+    elsif number % 3 == 0
       puts "Fizz"
-    elsif i % 5 == 0
+    elsif number % 5 == 0
       puts "Buzz"
     else
-      puts i
+      puts number
     end
   end
 end
