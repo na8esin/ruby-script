@@ -7,6 +7,8 @@ p Customer.new("Dave", "123 Main")
 # Customerと表示される
 p Customer.new("Dave", "123 Main").class
 
+p Customer.new.name # nil。例外は発生しない
+
 # この書き方もできるけど、Structの方が短い
 class User
   attr_accessor :id

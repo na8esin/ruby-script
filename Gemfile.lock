@@ -32,10 +32,11 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  arm64-darwin-22
 
 DEPENDENCIES
   activesupport
   aws-sdk-s3 (~> 1.2)
 
 BUNDLED WITH
-   2.3.7
+   2.4.1
