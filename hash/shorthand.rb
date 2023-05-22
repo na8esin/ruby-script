@@ -11,3 +11,8 @@ success, failure = sample.values
 
 p success # 1
 p failure # 2
+
+success, failure = *sample.values
+
+p success # 1
+p failure # 2
