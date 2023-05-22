@@ -12,7 +12,7 @@ success, failure = sample.values
 p success # 1
 p failure # 2
 
-success, failure = *sample.values
+success, failure = *sample
 
-p success # 1
-p failure # 2
+p success # [:success, 1]
+p failure # [:fail, 2]
