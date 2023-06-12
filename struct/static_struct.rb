@@ -1,8 +1,14 @@
 # keyword_initという引数もある
-Customer = Struct.new(:name, :address)
+Customer = Struct.new(:name, :address) do
+  # 構造体でメソッドかよ!とか思うけど、attr_accessorとかinitializeを書かなくていい分、楽
+  def greeting
+    "Hello #{name}!"
+  end
+end
 
 #<struct Customer name="Dave", address="123 Main">
-p Customer.new("Dave", "123 Main")
+p c = Customer.new("Dave", "123 Main")
+p c.greeting # => "Hello Dave!"
 
 # Customerと表示される
 p Customer.new("Dave", "123 Main").class
