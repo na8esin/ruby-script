@@ -9,6 +9,14 @@ def sample2
   a
 end
 
-p sample
+def sample3
+  'aaa'
+  'bbb' if true
+end
 
-p sample2
+
+p sample # => nil
+
+p sample2 # => aaa
+
+p sample3 # => nil
