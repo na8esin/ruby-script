@@ -16,5 +16,9 @@ p grouped[33].first # と思ったけど、firstがうっとうしい。
 p grouped[:unknown] # nil
 
 # 大先生から頂いた書き方。シンプルだが、アロケートが気になるそう
-p mapped = users.map{[_1.id, _1]}.to_h
+p mapped = users.map { [_1.id, _1] }.to_h
 p mapped[:unknown] # nil
+
+# 上の書き方をrubocopの指示で書き換えたもの
+mapped2 = users.to_h { [_1.id, _1] }
+p mapped2
