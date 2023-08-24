@@ -1,3 +1,4 @@
+# 引数forwardはキーワード引数とは併用できない
 def transform(a:, ...)
   process(...)
 
