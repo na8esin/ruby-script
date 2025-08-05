@@ -1,0 +1,4 @@
+hoge =
+  'aaa'
+
+p hoge
