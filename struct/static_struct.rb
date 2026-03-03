@@ -43,7 +43,8 @@ p User.new {|u| u.id = 12}.id # 12
 
 # Customer.new(name: 'Dave', address: '123 Main').name # Dave
 
-# initializeをオーバーライドしないでattr_accessorのフィールドをnewでセットできるのはrailsだけ？
+# initializeをオーバーライドしないでattr_accessorのフィールドをnewでセットできるのはrailsだけ
+# https://guides.rubyonrails.org/active_model_basics.html
 class Book
   attr_accessor :title, :author
 end
