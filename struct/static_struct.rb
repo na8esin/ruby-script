@@ -42,3 +42,14 @@ p User.new {|u| u.id = 12}.id # 12
 # end
 
 # Customer.new(name: 'Dave', address: '123 Main').name # Dave
+
+# initializeをオーバーライドしないでattr_accessorのフィールドをnewでセットできるのはrailsだけ？
+class Book
+  attr_accessor :title, :author
+end
+
+# wrong number of arguments (given 1, expected 0) (ArgumentError)
+p Book.new(
+  title: "The Great Gatsby",
+  author: "F. Scott Fitzgerald"
+  ).title # The Great Gatsby
