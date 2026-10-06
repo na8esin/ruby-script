@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.4.5'
+ruby '4.0.1'
 
 gem 'activesupport'
 gem 'aws-sdk-s3', '~> 1.199.1'
